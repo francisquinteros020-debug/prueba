@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>River Plate</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    color: #333;
+    margin: 0;
+}
+
+header {
+    background: #d71920;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+nav {
+    background: #222;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: red;
+}
+
+.portada, section {
+    background: white;
+    text-align: center;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 950px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+h2 {
+    color: #d71920;
+}
+
+img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 8px;
+}
+
+.portada img {
+    width: 90%;
+    max-width: 950px;
+    height: 300px;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 10px;
+}
+
+button {
+    background: #d71920;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #990d13;
+}
+
+#informacion, .articulo {
+    background: #f2f2f2;
+    padding: 15px;
+    border-radius: 8px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>CLUB ATLÉTICO RIVER PLATE</h1>
+    <p>El Más Grande - Una pasión que no conoce fronteras</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#video">Final 2018</a>
+    <a href="#infografia">Infografía</a>
+    <a href="#galeria">Galería</a>
+    <a href="#recursos">Historia</a>
+</nav>
+
+<div class="portada" id="inicio">
+    <h2>Bienvenidos al mundo River Plate</h2>
+    <p>River Plate es uno de los clubes más importantes del fútbol argentino. Su historia está llena de títulos, grandes jugadores y momentos inolvidables.</p>
+    <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1200&q=80" alt="Estadio de fútbol">
+    <h3>Una historia llena de gloria ❤️🤍</h3>
+</div>
+
+<section id="video">
+    <h2>La histórica final de Madrid 2018</h2>
+    <p>El 9 de diciembre de 2018, River derrotó a Boca por 3 a 1 en la final de la Copa Libertadores, disputada en Madrid.</p>
+    <p>Los goles fueron de Lucas Pratto, Juan Fernando Quintero y Gonzalo Martínez.</p>
+    <iframe src="https://www.youtube.com/embed/TmJtfQAzGGw" title="Final River contra Boca 2018" allowfullscreen></iframe>
+</section>
+
+<section id="infografia">
+    <h2>Infografía interactiva</h2>
+    <p>Hacé clic en los botones para conocer más sobre River.</p>
+
+    <button onclick="mostrar('River Plate fue fundado el 25 de mayo de 1901.')">Fundación</button>
+    <button onclick="mostrar('El estadio de River es el Monumental, ubicado en Núñez.')">Estadio</button>
+    <button onclick="mostrar('River ganó la Libertadores 2018 venciendo a Boca por 3 a 1.')">Libertadores 2018</button>
+    <button onclick="mostrar('Los colores tradicionales de River son el blanco y el rojo.')">Colores</button>
+
+    <p id="informacion">Elegí un botón para conocer más sobre River.</p>
+</section>
+
+<section id="galeria" class="galeria">
+    <h2>Galería de imágenes</h2>
+    <p>Imágenes relacionadas con el fútbol y la pasión por River.</p>
+
+    <img src="pelota.jpg" alt="Pelota">
+    <img src="final2018.jpg" alt="Partido">
+    <img src="Jugadores.jpg" alt="Jugadores">
+    <img src="estadio.jpg" alt="Estadio">
+</section>
+
+<section id="recursos">
+    <h2>Historia y artículos</h2>
+
+    <div class="articulo">
+        <h3>Los comienzos de River</h3>
+        <p>River Plate fue fundado el 25 de mayo de 1901 y se convirtió en uno de los clubes más reconocidos de Argentina.</p>
+    </div>
+
+    <div class="articulo">
+        <h3>El Estadio Monumental</h3>
+        <p>Es la casa de River Plate y se encuentra en el barrio de Núñez, Buenos Aires.</p>
+    </div>
+
+    <div class="articulo">
+        <h3>La gloria de 2018</h3>
+        <p>River consiguió uno de los títulos más recordados de su historia al vencer a Boca en Madrid.</p>
+    </div>
+
+    <h3>Enlaces para conocer más</h3>
+    <ul>
+        <li><a href="https://www.cariverplate.com.ar/" target="_blank">Página oficial de River</a></li>
+        <li><a href="https://www.afa.com.ar/" target="_blank">AFA</a></li>
+        <li><a href="https://www.conmebol.com/" target="_blank">CONMEBOL</a></li>
+    </ul>
+</section>
+
+<script>
+function mostrar(texto) {
+    document.getElementById("informacion").textContent = texto;
+}
+</script>
+
+</body>
+</html>
